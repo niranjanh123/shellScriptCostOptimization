@@ -1,4 +1,3 @@
-#ShellScript Project
 # ShellScript Project
 
 This shell script automates the process of backing up Jenkins log files to an S3 bucket, with the goal of freeing up space on the local file system. The script performs the following tasks:
@@ -29,6 +28,6 @@ Then, it calls the check_AWSCLI function to ensure AWS CLI is installed.
 Finally, the script proceeds to the push_logs_to_s3 function to upload all the valid log files to the S3 bucket.
 
 Key Features:
-Error handling: The script ensures that it exits with appropriate error messages if any issue arises during validation or file transfer.
-Efficiency: It processes each Jenkins job and its builds, uploading logs if present, and skips builds without log files.
-Logging: During execution, the script outputs the status of each job and build, providing feedback to the user.
+1. Error handling: The script ensures that it exits with appropriate error messages if any issue arises during validation or file transfer.
+2. Efficiency: It processes each Jenkins job and its builds, uploading logs if present, and skips builds without log files.
+3. Logging: During execution, the script outputs the status of each job and build, providing feedback to the user.
