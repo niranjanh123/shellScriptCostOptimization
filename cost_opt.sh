@@ -3,8 +3,8 @@
 set -x
 set -e
 
-JENKINS_HOME_DIR="/var/lib/jenkins/jobs"
-s3_bucket="s3://log-jenkins/logs/"
+JENKINS_HOME_DIR="<Add Jenkins path>"
+s3_bucket="<Add S3 bucket URL>"
 
 DATE=$(date +%Y-%m-%d)
 
